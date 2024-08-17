@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\AppDirectory\AppDirectory\AppDirectoryModule.csproj" />
+    <Reference Include="AppDirectoryModule">
+      <HintPath>..\..\AppDirectory\AppDirectory\bin\Debug\net8.0\AppDirectoryModule.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
