@@ -2,9 +2,9 @@
 
 namespace LoggerModule
 {
-    public class DebugLogger(LoggerDirectory loggerDir) : Logger(), ILogger
+    public class DebugLogger(DebugDirectory debugDir) : Logger(), ILogger
     {
-        public LoggerDirectory LoggerDirectory { get; private set; } = loggerDir;
+        public DebugDirectory DebugDir { get; private set; } = debugDir;
 
         public override void Chat(string message)
         {
@@ -23,12 +23,12 @@ namespace LoggerModule
 
         private string GetLogPath()
         {
-            var lastLog = LoggerDirectory.GetLastLog();
-            var logIdentity = LoggerDirectory.GetLogIdentity(lastLog);
+            var lastLog = DebugDir.GetLastLog();
+            var logIdentity = DebugDirectory.GetLogIdentity(lastLog);
 
             string logFile = $"{Date}_{logIdentity + 1}.txt";
 
-            string logPath = $"{LoggerDirectory.LoggerDir}\\{logFile}";
+            string logPath = $"{DebugDir.DebugDir}\\{logFile}";
 
             return logPath;
         }
