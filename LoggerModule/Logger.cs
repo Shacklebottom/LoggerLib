@@ -3,7 +3,7 @@ namespace LoggerModule
 {
     public abstract class Logger() : ILogger
     {
-        public string Date => $"{DateTime.Now:MM-dd-yyyy hh-mm-ss tt}";
+        public abstract string Date { get; }
 
         public abstract void Chat(string message);
 

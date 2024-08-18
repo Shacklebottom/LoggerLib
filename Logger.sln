@@ -4,6 +4,8 @@ VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoggerModule", "LoggerModule\LoggerModule.csproj", "{DC2010CA-FA3C-436E-8163-DB8F1516A0F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHarness", "TestHarness\TestHarness.csproj", "{934992DC-637E-4D27-B25C-A704C31321B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,10 @@ Global
 		{DC2010CA-FA3C-436E-8163-DB8F1516A0F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC2010CA-FA3C-436E-8163-DB8F1516A0F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC2010CA-FA3C-436E-8163-DB8F1516A0F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934992DC-637E-4D27-B25C-A704C31321B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934992DC-637E-4D27-B25C-A704C31321B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934992DC-637E-4D27-B25C-A704C31321B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934992DC-637E-4D27-B25C-A704C31321B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

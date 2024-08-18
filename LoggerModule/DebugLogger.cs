@@ -4,6 +4,8 @@ namespace LoggerModule
 {
     public class DebugLogger(DebugDirectory debugDir) : Logger(), ILogger
     {
+        public override string Date => $"{DateTime.Now:MM-dd-yyyy hh-mm-ss tt}";
+
         public DebugDirectory DebugDir { get; private set; } = debugDir;
 
         public override void Chat(string message)
