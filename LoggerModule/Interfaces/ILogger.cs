@@ -1,5 +1,4 @@
-﻿
-namespace LoggerModule
+﻿namespace LoggerModule.Interfaces
 {
     public interface ILogger
     {
@@ -10,5 +9,9 @@ namespace LoggerModule
         void Log(string message);
 
         void Log(string[] messages);
+
+        void Log(string message, Exception exception);
+
+        void Log(string[] message, Exception exception);
     }
 }

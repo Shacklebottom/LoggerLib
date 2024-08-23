@@ -1,5 +1,4 @@
-﻿
-namespace LoggerModule
+﻿namespace LoggerModule.Objects
 {
     public class Log
     {

@@ -1,7 +1,9 @@
-﻿
+﻿using LoggerModule.BaseClasses;
+using LoggerModule.Interfaces;
+using LoggerModule.Objects;
 using Microsoft.Data.SqlClient;
 
-namespace LoggerModule
+namespace LoggerModule.DerivedClasses
 {
     public class DatabaseLogger : Logger, ILogger
     {
@@ -18,8 +20,6 @@ namespace LoggerModule
             var connectionString = $"Integrated Security=SSPI;Persist Security Info=False;Initial Catalog={targetCatalog};Data Source=.;TrustServerCertificate=true";
             _sqlConnection = new SqlConnection(connectionString);
         }
-
-        public override string Date => $"{DateTime.Now:G}";
 
         public override void Chat(string message)
         {
@@ -49,6 +49,18 @@ namespace LoggerModule
 
                 Insert(logMessage);
             }
+        }
+
+        public override void Log(string message, Exception exception)
+        {
+            //I'll implement this later!
+            throw new NotImplementedException();
+        }
+
+        public override void Log(string[] message, Exception exception)
+        {
+            //I'll implement this later!
+            throw new NotImplementedException();
         }
 
         private void Insert(Log logMessage)

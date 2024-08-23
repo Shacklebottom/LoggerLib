@@ -12,7 +12,7 @@
 
   <ItemGroup>
     <Reference Include="AppDirectoryModule">
-      <HintPath>..\..\AppDirectory\AppDirectory\bin\Debug\net8.0\AppDirectoryModule.dll</HintPath>
+      <HintPath>..\..\AppDirectoryLib\AppDirectory\bin\Debug\net8.0\AppDirectoryModule.dll</HintPath>
     </Reference>
   </ItemGroup>
 
