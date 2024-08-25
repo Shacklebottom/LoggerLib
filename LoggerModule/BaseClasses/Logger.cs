@@ -4,7 +4,7 @@ namespace LoggerModule.BaseClasses
 {
     public abstract class Logger() : ILogger
     {
-        public string Date => $"{DateTime.Now:M-dd-yy HH:mm:ss}";
+        public string Date => $"{DateTime.Now:M-dd-yy HH_mm_ss_fff}";
 
         public abstract void Chat(string message);
 

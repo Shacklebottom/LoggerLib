@@ -18,21 +18,5 @@ namespace LoggerModule.DerivedClasses
         {
             return $"{RootDirectory}\\{_folderName}";
         }
-
-        public string GetLastLog()
-        {
-            var logs = GetDirectoryFiles(Directory);
-
-            if (logs.Any())
-            {
-                return logs.Last();
-            }
-            return "dummylog_0.txt";
-        }
-
-        public static int GetLogIdentity(string logFile)
-        {
-            return int.Parse(logFile.Split('_').Last().Split('.').First());
-        }
     }
 }

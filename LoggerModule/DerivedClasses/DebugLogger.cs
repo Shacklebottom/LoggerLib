@@ -43,10 +43,7 @@ namespace LoggerModule.DerivedClasses
 
         private string GetLogPath()
         {
-            var lastLog = DebugDir.GetLastLog();
-            var logIdentity = DebugDirectory.GetLogIdentity(lastLog);
-
-            string logFile = $"{Date}_{logIdentity + 1}.txt";
+            string logFile = $"{Date}.txt";
 
             string logPath = $"{DebugDir.Directory}\\{logFile}";
 
