@@ -2,19 +2,11 @@
 
 namespace LoggerModule.DerivedClasses
 {
-    public class DebugDirectory : AppDirectory
+    public class DebugDirectory(string rootDir, string folderName) : AppDirectory(rootDir)
     {
-        private readonly string _folderName;
-        public string Directory => GetDebugDir();
+        private readonly string _folderName = folderName;
 
-        public DebugDirectory(string rootDir, string folderName) : base(rootDir)
-        {
-            _folderName = folderName;
-
-            CreateAppDirectory(Directory);
-        }
-
-        private string GetDebugDir()
+        public override string GetAppDirectory()
         {
             return $"{RootDirectory}\\{_folderName}";
         }

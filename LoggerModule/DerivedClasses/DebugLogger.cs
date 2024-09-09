@@ -45,7 +45,7 @@ namespace LoggerModule.DerivedClasses
         {
             string logFile = $"{Date}.txt";
 
-            string logPath = $"{DebugDir.Directory}\\{logFile}";
+            string logPath = $"{DebugDir.AppDir}\\{logFile}";
 
             return logPath;
         }
